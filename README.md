@@ -40,7 +40,7 @@ In the file `.env` in the **root of this repository**, update the following valu
 LANGSMITH_API_KEY=<YOUR_LANGSMITH_API_KEY>
 LANGSMITH_PROJECT=<YOUR_LANGSMITH_PROJECT_NAME>
 ```
-To get the `OPENAI_API_KEY`, head over to this [onetime secret link](https://eu.onetimesecret.com/secret/4bqgx0po6vsifol4bglkj3cv1n6hm20) and use the passphrase `tad2026`. Update the value of the `OPENAI_API_KEY`
+To get the value of `OPENAI_API_KEY`, head over to this [document](https://www.protectedtext.com/tad2026workshop) and use the password `tad2026`. Update the value of the `OPENAI_API_KEY`
 
 ## Start the environment and run the pre-flight notebook
 
