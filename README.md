@@ -4,6 +4,11 @@ Welcome to the repository for the workshop **"Build your own Retrieval Augmented
 
 This workshop is hands-on: you’ll run Jupyter Notebooks inside a Docker container. The notebooks contain Python code for building a RAG pipeline, calling an LLM, and evaluating results with LangSmith and Ragas.
 
+This guide should help you get setup and running before the workshop starts. It should not take more than 30 minutes.
+
+If you are stuck or have questions, please reach out to me at [ak@anukrit.de](mailto:ak@anukrit.de).
+
+
 ## Tools used
 
 - **Docker** – Runs a consistent environment (Python, Jupyter, dependencies) in a container.
@@ -58,7 +63,7 @@ An `OPENAI_API_KEY` is already provided. Leave it as is.
     Open the URL in your browser to access Jupyter Lab: http://localhost:8888/lab
 
 3. **Run the pre-flight check**  
-   - In Jupyter Lab UI, open the file **`preFlightCheck.ipynb`**.  
+   - In Jupyter Lab UI, open the file `preFlightCheck.ipynb`.  
    - Follow the instructions in the notebook.  
 
 4. **Stop the environment**  
