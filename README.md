@@ -46,7 +46,7 @@ To get the value of `OPENAI_API_KEY`, head over to this [document](https://www.p
 
 1. Start Docker Desktop.
 
-2. Run the following command to start the environment:
+2. In a new terminal or command prompt window, run the following command from the root folder of this project to start the environment:
    ```bash
    docker compose up --build
    ```
@@ -63,7 +63,7 @@ To get the value of `OPENAI_API_KEY`, head over to this [document](https://www.p
 
 3. **Run the pre-flight check**  
    - In Jupyter Lab UI, open the file `preFlightCheck.ipynb`.  
-   - Follow the instructions in the notebook.  
+   - Follow the instructions in the notebook (select each cell, click the 'Run' button and check the output)
 
 4. **Stop the environment**  
    In the terminal where `docker compose up` is running, press **Ctrl+C**. 
