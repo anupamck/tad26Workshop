@@ -26,7 +26,7 @@ If you are stuck or have questions, please reach out to me at [ak@anukrit.de](ma
    Start Docker Desktop and ensure it’s running.
 
 2. **LangSmith account and project**  
-  Sign up at [smith.langchain.com](https://smith.langchain.com).  
+  Sign up at [smith.langchain.com](https://smith.langchain.com). Select the region as `US`.  
   Create a project (e.g. `tad26-rag-workshop`) via the LangSmith UI (Tracing -> New Project).  
   Create an API key for tracing (Account -> Settings -> API Keys -> Personal Access Token).  
   You’ll add your project name and your API key to your environment file in the next step.  
@@ -75,3 +75,33 @@ To get the value of `OPENAI_API_KEY`, head over to this [document](https://www.p
 5. **Verify tracing in LangSmith**
    - Open your LangSmith project and confirm you see the test run (Tracing -> `<your-project-name>`). 
    - You should see an execution trace for your pre-flight check.
+
+## Docker commands cheat sheet
+
+To start the container the first time:
+```bash
+docker compose up --build
+```
+
+To merely start the container:
+```bash
+docker compose up
+```
+
+To stop the container:
+```bash
+docker compose down
+```
+
+To rebuild the container without cache:
+```bash
+docker compose up --build --no-cache
+```
+
+## Troubleshooting
+
+If you encounter the following eror: `Failed to multipart ingest runs: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')`
+then make sure the API key is correct and not expired. 
+
+If you still encounter this error, it is perhaps due to your region. Check if your LangSmith URL is https://smith.langchain.com/. If instead, it is https://eu.smith.langchain.com/, then you need to update the `.env` file accordingly:
+`LANGSMITH_ENDPOINT="https://eu.api.smith.langchain.com"`
