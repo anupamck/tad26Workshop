@@ -95,7 +95,7 @@ docker compose down
 
 To rebuild the container without cache:
 ```bash
-docker compose up --build --no-cache
+docker compose build --no-cache
 ```
 
 ## Troubleshooting

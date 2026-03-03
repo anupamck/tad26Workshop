@@ -1,5 +1,5 @@
 # Lightweight Python base image
-FROM python:3.13-slim
+FROM python:3.13.12-slim
 
 WORKDIR /workspace
 
